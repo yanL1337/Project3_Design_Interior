@@ -1,0 +1,215 @@
+@font-face {
+  font-family: AlegraSans;
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: AlegraSc;
+  src: url("../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: Nixie;
+  src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.25%;
+}
+
+/* - Header */
+
+h1 {
+  font-size: 3.6rem;
+  font-family: AlegraSc;
+}
+
+header h2 {
+  font-size: 5.6rem;
+  font-family: Nixie;
+}
+
+header p {
+  font-size: 2.2rem;
+  font-family: AlegraSc;
+}
+
+header {
+  background: url("../img/header/headerfoto.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.burger {
+  background: url("../img/header/Link.png") no-repeat center;
+  height: 24px;
+  width: 28px;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.upperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 200px;
+}
+
+.middleHeader {
+  text-align: center;
+}
+
+/* - Portfolio */
+
+.portfolio {
+  padding: 100px;
+  background-color: #c3c9cc94;
+  height: 100vh;
+}
+
+.portfolio h2 {
+  font-family: AlegraSans;
+  color: #3a4f52;
+  font-size: 3.6rem;
+}
+
+.portfolio p {
+  font-size: 1.4rem;
+  color: #6a6a6a;
+  font-family: Helvetica;
+  margin-bottom: 50px;
+}
+
+.lwHeader a {
+  font-size: 1.8rem;
+  font-family: Helvetica;
+  padding: 10px 20px;
+  border: 2px solid #3a4f52;
+  color: #3a4f52;
+  text-decoration: none;
+}
+
+.lwHeader a:hover {
+  background-color: #3a4f52;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.lwHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.latestWorks {
+  padding: 10px;
+  border: 2px solid #3a4f52;
+}
+
+/* - Imgages */
+
+.imgGallery img {
+  width: 360px;
+  height: 215px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.imgGallery {
+  padding: 10px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* - Image Hover */
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: #3a4f52;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  border: 2px solid white;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.container:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* - Services */
+
+.services {
+  background: url("../img/ourservices/service.png") no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  background-attachment: fixed;
+  padding: 80px 135px;
+}
+
+.servicesWrapper {
+  background-color: #3a4f526c;
+  color: #fff;
+  text-align: center;
+}
+
+.serviceHeader h2 {
+  font-family: AlegraSans;
+  font-size: 3.6rem;
+  margin-bottom: 5px;
+}
+
+.serviceHeader p {
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  margin-bottom: 50px;
+}
+
+.icon-and-text h2 {
+  font-size: 3rem;
+  font-family: AlegraSans;
+  margin-bottom: 15px;
+}
+
+.icon-and-text p {
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.iconWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
