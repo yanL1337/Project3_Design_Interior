@@ -69,28 +69,40 @@ header {
   text-align: center;
 }
 
-/* - Portfolio */
+/* - Portfolio and blog*/
 
-.portfolio {
+.portfolio,
+.blog {
   padding: 100px;
   background-color: #c3c9cc94;
-  height: 100vh;
+  height: 110vh;
 }
 
-.portfolio h2 {
+.portfolio h2,
+.blog h2 {
   font-family: AlegraSans;
   color: #3a4f52;
   font-size: 3.6rem;
 }
 
-.portfolio p {
+.blog h3 {
+  color: #6a6a6a;
+  font-family: Helvetica;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.portfolio p,
+.blog p {
   font-size: 1.4rem;
   color: #6a6a6a;
   font-family: Helvetica;
   margin-bottom: 50px;
 }
 
-.lwHeader a {
+.lwHeader a,
+.bHeader a {
   font-size: 1.8rem;
   font-family: Helvetica;
   padding: 10px 20px;
@@ -99,19 +111,22 @@ header {
   text-decoration: none;
 }
 
-.lwHeader a:hover {
+.lwHeader a:hover,
+.bHeader a:hover {
   background-color: #3a4f52;
   color: #fff;
   transition: 0.5s ease;
 }
 
-.lwHeader {
+.lwHeader,
+.bHeader {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-.latestWorks {
+.latestWorks,
+.theBlog {
   padding: 10px;
   border: 2px solid #3a4f52;
 }
@@ -125,11 +140,47 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-.imgGallery {
+.imgGallery,
+.imgGallery2 {
   padding: 10px;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* - blog description styling */
+
+.imgGallery2 h2,
+.imgGallery2 h3 {
+  margin-bottom: 15px;
+}
+
+.imgGallery2 a {
+  font-size: 1.4rem;
+  font-family: Helvetica;
+  text-decoration: none;
+  color: #4da7ca;
+}
+.imgGallery2 a:hover {
+  text-decoration: underline;
+}
+
+.description1 img {
+  height: 230px;
+  width: 360px;
+  margin-bottom: 10px;
+}
+
+.description2 img {
+  height: 270px;
+  width: 360px;
+  margin-bottom: 10px;
+}
+
+.description3 img {
+  height: 360px;
+  width: 360px;
+  margin-bottom: 10px;
 }
 
 /* - Image Hover */
@@ -206,6 +257,8 @@ header {
 .icon-and-text p {
   margin: 0 auto;
   width: 200px;
+  font-family: Helvetica;
+  font-weight: lighter;
   margin-bottom: 50px;
 }
 
@@ -213,3 +266,35 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* - paralax quote */
+
+.parallax {
+  background: url("../img/quoteparalax/quote.png") no-repeat center;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  padding: 80px 135px;
+  background-attachment: fixed;
+}
+.articleWrapper {
+  font-size: 3.6rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 15px;
+}
+
+.articleWrapper p {
+  margin-bottom: 50px;
+}
+
+.articleWrapper a {
+  font-family: Helvetica;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid white;
+  padding: 5px 15px;
+}
+
+/* - testimonials */
